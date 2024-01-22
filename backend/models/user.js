@@ -1,9 +1,13 @@
-import mongoose from "mongoose";
-import validator from "validator";
-import nodemailer from "nodemailer";
-import { Verify } from "./verify";
+// import mongoose from "mongoose";
+// import validator from "validator";
+// import nodemailer from "nodemailer";
+// import { Verify } from "./verify";
 
+const mongoose = require("mongoose");
 const bcrypt = require('bcrypt');
+const validator = require("validator");
+const nodemailer = require("nodemailer");
+const {Verify} = require("./veryfy");
 
 const userSchema = new mongoose.Schema({
     username: {
@@ -115,4 +119,4 @@ userSchema.statics.login = async function (email, password) {
     return exist;
 }
 
-export const User = mongoose.model("User", userSchema);
+//export const User = mongoose.model("User", userSchema);

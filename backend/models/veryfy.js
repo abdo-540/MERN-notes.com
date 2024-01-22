@@ -1,4 +1,6 @@
-import mongoose from "mongoose";
+//import mongoose from "mongoose";
+
+const mongoose = require("mongoose");
 
 const verifySchema = new mongoose.Schema({
     userID: {
@@ -12,4 +14,4 @@ const verifySchema = new mongoose.Schema({
     }
 }, {timestamps: true});
 
-export const Verify = mongoose.model("Verify", verifySchema);
+//export const Verify = mongoose.model("Verify", verifySchema);

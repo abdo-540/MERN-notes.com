@@ -1,14 +1,26 @@
-import express from "express";
-import mongoose from "mongoose";
-import cors from "cors";
-import dotenv from "dotenv";
-import jsonwebtoken from "jsonwebtoken";
-import nodemailer from "nodemailer";
-import crypto from "crypto";
-import { User } from "./models/user";
-import { Verify } from "./models/veryfy";
-import userRoute from "./routes/userRoute";
-import noteRoute from "./routes/noteRoute";
+//import express from "express";
+//import mongoose from "mongoose";
+//import cors from "cors";
+//import dotenv from "dotenv";
+//import jsonwebtoken from "jsonwebtoken";
+//import nodemailer from "nodemailer";
+//import crypto from "crypto";
+// import { User } from "./models/user.js";
+// import { Verify } from "./models/veryfy";
+//import userRoute from "./routes/userRoute";
+//import noteRoute from "./routes/noteRoute";
+
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const jsonwebtoken = require("jsonwebtoken");
+const nodemailer = require("nodemailer");
+const crypto = require("crypto");
+const {User} = require("./models/user");
+const {Verify} = require("./models/veryfy");
+const userRoute = require("./routes/userRoute");
+const noteRoute = require("./routes/noteRoute");
 
 dotenv.config();
 

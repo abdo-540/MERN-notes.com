@@ -1,4 +1,6 @@
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+
+const mongoose = require("mongoose");
 
 const noteSchema = new mongoose.Schema({
     userID: {
@@ -13,4 +15,4 @@ const noteSchema = new mongoose.Schema({
     body: String
 }, { timestamps: true });
 
-export const Note = mongoose.model("Note", noteSchema);
+//export const Note = mongoose.model("Note", noteSchema);

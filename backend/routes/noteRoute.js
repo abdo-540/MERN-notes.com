@@ -1,5 +1,8 @@
-import express from "express";
-import { Note } from "../models/note";
+//import express from "express";
+//import { Note } from "../models/note";
+
+const express = require("express");
+const { Note } = require("../models/note");
 
 const router = express.Router();
 
@@ -75,3 +78,5 @@ router.delete("/:id", async (req, res) => {
         res.status(500).send({message: err.message});
     }
 });
+
+module.exports = router;

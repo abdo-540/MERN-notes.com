@@ -1,6 +1,10 @@
-import express from "express";
-import { User } from "../models/user";
-import { Verify } from "../models/verify";
+//import express from "express";
+// import { User } from "../models/user";
+// import { Verify } from "../models/verify";
+
+const express = require("express");
+const {User} = require("../models/user");
+const {Verify} = require("../models/veryfy");
 
 const router = express.Router();
 
@@ -62,4 +66,4 @@ router.get("/:id/verify/:verify", async (req, res) => {
     }
 });
 
-export default router;
+module.exports = router;
