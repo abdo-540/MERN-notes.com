@@ -112,6 +112,8 @@ app.post("/signup", signup);
 
 app.post("/login", login);
 
+console.log(process.env.MONGOOSE_URL);
+
 mongoose.connect(process.env.MONGOOSE_URL).then(() => {
     console.log("connected to db");
     app.listen(port, () => {
